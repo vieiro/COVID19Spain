@@ -16,6 +16,10 @@ NOTE: La precisión de los cálculos es la que es, yo no respondo de las conclus
 
 Los datos son los de Datadista, disponibles en https://raw.githubusercontent.com/datadista/datasets/master/COVID%2019/nacional_covid19.csv, que se actualizan diariamente.
 
+== La hoja Excel
+
+Si no tiene Python instalado puede utilizar link:covid19-españa-sir.xlsx[esta hoja Excel].
+
 == El programa
 
 El programa es link:sir.py[sir.py]. Está feíllo por dentro, pero me funciona.
