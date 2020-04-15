@@ -88,7 +88,12 @@ def dFdt(F):
     """
     dfdt = [0]
     for i in range(1,len(F)):
-        dfdt.append( F[i] - F[i-1])
+        if i == 0:
+            dfdt.append(F[1]-F[0])
+        elif i == len(F)-1:
+            dfdt.append(F[len(F)-1]-F[len(F)-2])
+        else:
+            dfdt.append(0.5*(F[i+1] - F[i-1]))
     return dfdt
 
 ## Conversión de fechas
