@@ -68,45 +68,6 @@ def readCSV():
     data = data.fillna(0)
     return data
 
-## Suma
-def sumSeries(a,b):
-    """
-    Dadas dos series pandas, las suma
-    """
-    result = []
-    for index, aa in a.iteritems():
-        result.append(aa + b.iloc[index])
-    return result
-
-## Calcula la "derivada" de un vector.
-def dFdt(F):
-    """
-    Calcula la derivada de un vector.
-    Se aproxima la derivada por incrementos de la función en un
-    período de tiempo "dt" que es, obviamente, un día.
-    O sea: dFdt ~ (F(t+1) - F(t)) / ((t+1)-t) = F(t+1) - F(t)
-    """
-    dfdt = [0]
-    for i in range(1,len(F)):
-        if i == 0:
-            dfdt.append(F[1]-F[0])
-        elif i == len(F)-1:
-            dfdt.append(F[len(F)-1]-F[len(F)-2])
-        else:
-            dfdt.append(0.5*(F[i+1] - F[i-1]))
-    return dfdt
-
-## Conversión de fechas
-def dates(x):
-    """
-    Dada una serie pandas de timestamps, esta
-    función convierte los timestamps a fechas.
-    """
-    xx = []
-    for index, date in x.iteritems():
-        xx.append(date.date())
-    return xx
-
 ## Cálculo de parámetros del modelo SIR
 # (1) N = S + I + R  (N: Número total de personas)
 # (2) dS/dt = - beta S I / N
@@ -194,7 +155,7 @@ download(NACIONAL_URL, NACIONAL_FILE)
 data = readCSV()
 
 ## Convertir los timestamps a fechas para pintar
-x = dates(data[COL_FECHA])
+x = data[COL_FECHA].apply(lambda x: x.date())
 
 ## Obtener los casos totales, las altas y los fallecimientos
 casos = data[COL_CASOS]
@@ -207,21 +168,19 @@ muertes = data[COL_MUERTES]
 I = casos
 
 ## R: Recuperados, esto es la suma de las altas y los fallecimientos
-R = sumSeries(altas, muertes)
+R = altas + muertes 
 
 ## S: Los que no son ni I ni R (los "infectables")
-S = []
-for index in range(len(I)):
-    S.append(N - I[index] - R[index])
+S = N - I - R
 
 ## dI/dt: Aproximación de la derivada de I con incrementos diarios en I
-dIdt = dFdt(I)
+dIdt = numpy.gradient(I) 
 
 ## dR/dt: Aproximación de la derivada de R con incrementos diarios en R
-dRdt = dFdt(R)
+dRdt = numpy.gradient(R)
 
 ## dS/dt: Aproximación de la derivada de S con incrementos diarios en S
-dSdt = dFdt(S)
+dSdt = numpy.gradient(S)
 
 ## Preparar el gráfico
 pyplot.style.use('Solarize_Light2')
@@ -309,7 +268,7 @@ subplot.xaxis.set_minor_locator(mdates.DayLocator())
 subplot.tick_params(axis='x', color='black', labelsize='11', labelcolor='black')
 subplot.tick_params(axis='y', color='red', labelsize='11', labelcolor='red')
 subplot.plot(xxxx, R0, linewidth=1.9, color='red', alpha=1, label='R0')
-subplot.set_ylim([0,15])
+subplot.set_ylim([0,10])
 subplot.set_ylabel('R0')
 
 pyplot.suptitle("COVID-19 España. Modelo SIR. R0.", fontweight='bold', color='black', fontsize=16) #fontsize=12, fontweight=400, color='black')
