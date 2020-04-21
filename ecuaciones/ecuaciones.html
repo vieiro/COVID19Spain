@@ -1,0 +1,349 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2019 (Released January 1, 2019) -->
+<HTML lang="EN">
+<HEAD>
+<TITLE>ecuaciones</TITLE>
+<META NAME="description" CONTENT="ecuaciones">
+<META NAME="keywords" CONTENT="ecuaciones">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2019">
+
+<LINK REL="STYLESHEET" HREF="ecuaciones.css">
+
+</HEAD>
+
+<BODY  LANG="es">
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<IMG WIDTH="81" HEIGHT="24" ALT="next_inactive" SRC="nx_grp_g.png"> 
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up_g.png"> 
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev_g.png">   
+<BR>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<P>
+
+<H1><A ID="SECTION00010000000000000000">
+El modelo Kermack-McKendrick</A>
+</H1>
+
+<P>
+
+<H2><A ID="SECTION00011000000000000000">
+Definiciones</A>
+</H2>
+
+<P>
+Dada una poblaciÃ³n de personas <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img1.svg"
+ ALT="$N$"></SPAN>, se definen:
+
+<P>
+
+<UL>
+<LI><SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img2.svg"
+ ALT="$S(t)$"></SPAN> nÃºmero de personas subsceptibles de contagio, es decir, sanas.
+</LI>
+<LI><SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img3.svg"
+ ALT="$I(t)$"></SPAN> nÃºmero de personas infectadas.
+</LI>
+<LI><SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img4.svg"
+ ALT="$R(t)$"></SPAN> nÃºmero de personas recuperadas (o fallecidas).
+</LI>
+</UL>
+
+<P>
+donde <SPAN CLASS="MATH"><IMG STYLE="height: 1.64ex; vertical-align: -0.11ex; " SRC="img5.svg"
+ ALT="$t$"></SPAN> es el tiempo.
+
+<P>
+El modelo utiliza las siguientes tres constantes:
+
+<P>
+
+<UL>
+<LI><SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img6.svg"
+ ALT="$\beta$"></SPAN> que indica la velocidad de infecciÃ³n.
+</LI>
+<LI><SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img7.svg"
+ ALT="$\gamma$"></SPAN> que indica la velocidad de recuperaciÃ³n.
+</LI>
+</UL>
+
+<P>
+Y tambiÃ©n el factor de infecciÃ³n como:
+
+<P>
+<P><!-- MATH
+ \begin{displaymath}
+R_0 \equiv \frac{\beta S}{\gamma}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.42ex; vertical-align: -2.15ex; " SRC="img8.svg"
+ ALT="$\displaystyle R_0 \equiv \frac{\beta S}{\gamma} $">
+</DIV><P></P>
+
+<P>
+Que nos indica a cuÃ¡ntas personas sanas es capaz de infectar una persona enferma durante su enfermedad.
+
+<P>
+
+<H2><A ID="SECTION00012000000000000000">
+Condiciones adicionales</A>
+</H2>
+
+<P>
+En una poblaciÃ³n con <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img1.svg"
+ ALT="$N$"></SPAN> personas, cada persona estÃ¡ sana, infectada o recuperada, esto es:
+
+<P>
+<P><!-- MATH
+ \begin{displaymath}
+S(t) + I(t) + R(t) = N
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img9.svg"
+ ALT="$\displaystyle S(t) + I(t) + R(t) = N
+$">
+</DIV><P></P>
+
+<P>
+Derivando respecto al tiempo obtenemos:
+
+<P>
+<P><!-- MATH
+ \begin{displaymath}
+\frac{dS(t)}{dt} + \frac{dI(t)}{dt} + \frac{dR(t)}{dt} = 0
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.10ex; vertical-align: -1.70ex; " SRC="img10.svg"
+ ALT="$\displaystyle \frac{dS(t)}{dt} + \frac{dI(t)}{dt} + \frac{dR(t)}{dt} = 0
+$">
+</DIV><P></P>
+
+<P>
+
+<H2><A ID="SECTION00013000000000000000">
+Ecuaciones del modelo</A>
+</H2>
+
+<P>
+Este modelo relaciona las constantes con las funciones anteriores a travÃ©s de tres ecuaciones:
+
+<P>
+<P><!-- MATH
+ \begin{displaymath}
+\frac{dS(t)}{dt} = - \beta(t) S(t) I(t)
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.10ex; vertical-align: -1.70ex; " SRC="img11.svg"
+ ALT="$\displaystyle \frac{dS(t)}{dt} = - \beta(t) S(t) I(t) $">
+</DIV><P></P>
+<P><!-- MATH
+ \begin{displaymath}
+\frac{dI(t)}{dt} = \beta(t) S(t) I(t) - \gamma(t) I(t)
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.10ex; vertical-align: -1.70ex; " SRC="img12.svg"
+ ALT="$\displaystyle \frac{dI(t)}{dt} = \beta(t) S(t) I(t) - \gamma(t) I(t)$">
+</DIV><P></P>
+<P><!-- MATH
+ \begin{displaymath}
+\frac{dR(t)}{dt} = \gamma(t) I(t)
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.10ex; vertical-align: -1.70ex; " SRC="img13.svg"
+ ALT="$\displaystyle \frac{dR(t)}{dt} = \gamma(t) I(t) $">
+</DIV><P></P>
+
+<P>
+Es fÃ¡cil comprobar que, efectivamente,
+
+<P>
+<P><!-- MATH
+ \begin{displaymath}
+\frac{dI(t)}{dt} + \frac{dS(t)}{dt} + \frac{dR(t)}{dt} = 0
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.10ex; vertical-align: -1.70ex; " SRC="img14.svg"
+ ALT="$\displaystyle \frac{dI(t)}{dt} + \frac{dS(t)}{dt} + \frac{dR(t)}{dt} = 0 $">
+</DIV><P></P>
+
+<P>
+Aproximando las derivadas por incrementos, es decir:
+
+<P>
+<P><!-- MATH
+ \begin{displaymath}
+\frac{df(t)}{dt} \approx \frac{\Delta f}{\Delta t}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.10ex; vertical-align: -1.70ex; " SRC="img15.svg"
+ ALT="$\displaystyle \frac{df(t)}{dt} \approx \frac{\Delta f}{\Delta t}$">
+</DIV><P></P>
+
+<P>
+y asumiendo un incremento de tiempo de la unidad (un dÃ­a, una hora, una semana), es decir, si <!-- MATH
+ $\Delta t = 1$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img16.svg"
+ ALT="$\Delta t = 1$"></SPAN>, entonces:
+
+<P>
+<P><!-- MATH
+ \begin{displaymath}
+\Delta S  \approx - \beta S I
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img17.svg"
+ ALT="$\displaystyle \Delta S \approx - \beta S I $">
+</DIV><P></P>
+<P><!-- MATH
+ \begin{displaymath}
+\Delta I \approx \beta S I - \gamma I
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img18.svg"
+ ALT="$\displaystyle \Delta I \approx \beta S I - \gamma I $">
+</DIV><P></P>
+<P><!-- MATH
+ \begin{displaymath}
+\Delta R \approx \gamma I
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 2.24ex; vertical-align: -0.56ex; " SRC="img19.svg"
+ ALT="$\displaystyle \Delta R \approx \gamma I $">
+</DIV><P></P>
+
+<P>
+Despejando obtenemos las aproximaciones:
+
+<P>
+<P><!-- MATH
+ \begin{displaymath}
+\gamma \approx \frac{\Delta R}{I}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 4.95ex; vertical-align: -1.70ex; " SRC="img20.svg"
+ ALT="$\displaystyle \gamma \approx \frac{\Delta R}{I} $">
+</DIV><P></P>
+<P><!-- MATH
+ \begin{displaymath}
+\beta \approx - \frac{\Delta S}{S I}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 4.95ex; vertical-align: -1.70ex; " SRC="img21.svg"
+ ALT="$\displaystyle \beta \approx - \frac{\Delta S}{S I} $">
+</DIV><P></P>
+
+<P>
+Entonces
+
+<P>
+<P><!-- MATH
+ \begin{displaymath}
+R_0 \equiv \frac{\beta S}{\gamma} \approx - \frac{\Delta S}{\Delta R} = \frac{\Delta R + \Delta I}{\Delta R}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.42ex; vertical-align: -2.15ex; " SRC="img22.svg"
+ ALT="$\displaystyle R_0 \equiv \frac{\beta S}{\gamma} \approx - \frac{\Delta S}{\Delta R} = \frac{\Delta R + \Delta I}{\Delta R} $">
+</DIV><P></P>
+
+<P>
+En resumen, el factor de propagaciÃ³n de la enfermedad se aproxima por:
+
+<P>
+<P><!-- MATH
+ \begin{displaymath}
+R_0 \approx \frac{\Delta R + \Delta I}{\Delta R}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 4.95ex; vertical-align: -1.70ex; " SRC="img23.svg"
+ ALT="$\displaystyle R_0 \approx \frac{\Delta R + \Delta I}{\Delta R} $">
+</DIV><P></P>
+
+<P>
+Este factor serÃ¡ menor que la unidad Ãºnicamente cuando <!-- MATH
+ $\Delta I < 0$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.88ex; vertical-align: -0.20ex; " SRC="img24.svg"
+ ALT="$\Delta I &lt; 0$"></SPAN>, es
+decir, cuando el nÃºmero de nuevos contagios descienda, y serÃ¡ mayor que la
+unidad en caso contrario.
+
+<P>
+
+<H2><A ID="SECTION00014000000000000000">
+MÃ¡s informaciÃ³n</A>
+</H2>
+
+<P>
+
+<UL>
+<LI>Ver <kbd><A ID="tex2html1"
+  HREF="https://mathworld.wolfram.com/Kermack-McKendrickModel.html">https://mathworld.wolfram.com/Kermack-McKendrickModel.html</A></kbd>modelo Kermack-McKendrick en mathworld.
+</LI>
+<LI>Ver <kbd><A ID="tex2html2"
+  HREF="https://quicklatex.com/">https://quicklatex.com/</A></kbd>quicklatex.com para un editor <SPAN CLASS="logo,LaTeX">L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X</SPAN>online.
+</LI>
+</UL>
+
+<P>
+
+<H1><A ID="SECTION00020000000000000000">
+Sobre este documento...</A>
+</H1>
+ <P>
+This document was generated using the
+<A HREF="http://www.latex2html.org/">LaTeX2HTML</A> translator Version 2019 (Released January 1, 2019)
+<P>
+The command line arguments were: <BR>
+ <kbd>latex2html -split 0 -html_version 5.0,utf8 ecuaciones.latex</kbd>
+<P>
+The translation was initiated on 2020-04-22
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<IMG WIDTH="81" HEIGHT="24" ALT="next_inactive" SRC="nx_grp_g.png"> 
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up_g.png"> 
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev_g.png">   
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

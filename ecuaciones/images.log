@@ -1,0 +1,392 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.4.22)  22 APR 2020 00:20
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./images.tex
+(./images.tex
+LaTeX2e <2018-12-01>
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip43
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks14
+\ex@=\dimen103
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen104
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks15
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2018/11/13 3.27 The Babel package
+(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2018/11/13 3.27 Babel switching mechanism
+)
+
+! Package babel Error: Unknown option `spanish'. Either you misspelled it
+(babel)                or the language definition file spanish.ldf was not foun
+d.
+
+See the babel package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.469 \ProcessOptions*
+                      
+Valid options are: shorthands=, KeepShorthandsActive,
+activeacute, activegrave, noconfigs, safe=, main=, math=
+headfoot=, strings=, config=, hyphenmap=, or a language name.
+
+Package babel Info: You haven't specified a language. I'll use 'nil'
+(babel)             as the main language. Reported on input line 499.
+(/usr/share/texlive/texmf-dist/tex/generic/babel/nil.ldf
+Language: nil 2018/11/13 3.27 Nil language
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2018/11/13 3.27 Babel common definitions
+\babel@savecnt=\count100
+\U@D=\dimen112
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count101
+)))
+
+! Package babel Error: You haven't defined the language spanish yet.
+
+See the babel package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \selectlanguage{spanish}
+                             
+Your command will be ignored, type <return> to proceed
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
+) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+
+! LaTeX Error: Option clash for package inputenc.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 
+     
+The package inputenc has already been loaded with options:
+  [utf8]
+There has now been an attempt to load it with options
+  [latin1]
+Adding the global options:
+  utf8,latin1
+to your \documentclass declaration may fix this.
+Try typing  <return>  to proceed.
+
+\sizebox=\box29
+\lthtmlwrite=\write3
+(/usr/share/texmf/tex/latex/preview/preview.sty
+Package: preview 2017/04/24 11.91 (AUCTeX/preview-latex)
+(/usr/share/texmf/tex/latex/preview/prtightpage.def
+\PreviewBorder=\dimen113
+)
+\pr@snippet=\count102
+\pr@box=\box30
+\pr@output=\toks21
+)
+\lthtmlPageBox=\box31
+\lthtmlCropMarkHeight=\dimen114
+\lthtmlCropMarkDepth=\dimen115
+! Too many }'s.
+l.71 ...preview}\copy\lthtmlPageBox\end{preview}}}
+                                                  %
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+(./images.aux)
+\openout1 = `images.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count103
+\scratchdimen=\dimen116
+\scratchbox=\box32
+\nofMPsegments=\count104
+\nofMParguments=\count105
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count106
+\MPscratchDim=\dimen117
+\MPnumerator=\count107
+\makeMPintoPDFobject=\count108
+\everyMPtoPDFconversion=\toks23
+)
+Preview: Fontsize 10.95pt
+Preview: PDFoutput 1
+
+latex2htmlLength hsize=349.0pt
+
+latex2htmlLength vsize=680.80026pt
+
+latex2htmlLength hoffset=0.0pt
+
+latex2htmlLength voffset=0.0pt
+
+latex2htmlLength topmargin=0.0pt
+
+latex2htmlLength topskip=0.00003pt
+
+latex2htmlLength headheight=0.0pt
+
+latex2htmlLength headsep=0.0pt
+
+latex2htmlLength parskip=0.0pt plus 1.0pt
+
+latex2htmlLength oddsidemargin=46.0pt
+
+latex2htmlLength evensidemargin=46.0pt
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 143.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 143.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+:tex2html_wrap_inline192:lthtmlCropMarkHeight:=13.48248pt
+
+:tex2html_wrap_inline192:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+Preview: Tightpage -32891 -32891 32891 32891
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+:tex2html_wrap_inline194:lthtmlCropMarkHeight:=14.2125pt
+
+:tex2html_wrap_inline194:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
+[2]
+
+:tex2html_wrap_inline196:lthtmlCropMarkHeight:=14.2125pt
+
+:tex2html_wrap_inline196:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
+[3]
+
+:tex2html_wrap_inline198:lthtmlCropMarkHeight:=14.2125pt
+
+:tex2html_wrap_inline198:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
+[4]
+
+:tex2html_wrap_inline200:lthtmlCropMarkHeight:=12.73512pt
+
+:tex2html_wrap_inline200:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+[5]
+
+:tex2html_wrap_inline202:lthtmlCropMarkHeight:=13.60416pt
+
+:tex2html_wrap_inline202:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+[6]
+
+:tex2html_wrap_inline204:lthtmlCropMarkHeight:=10.71457pt
+
+:tex2html_wrap_inline204:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+[7]
+
+:tex2html_wrap_indisplay206:lthtmlCropMarkHeight:=21.0119pt
+
+:tex2html_wrap_indisplay206:lthtmlCropMarkDepth:=9.64032pt:1ex:=4.71457pt
+[8]
+
+:tex2html_wrap_indisplay211:lthtmlCropMarkHeight:=14.2125pt
+
+:tex2html_wrap_indisplay211:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
+[9]
+
+:tex2html_wrap_indisplay213:lthtmlCropMarkHeight:=21.62024pt
+
+:tex2html_wrap_indisplay213:lthtmlCropMarkDepth:=7.51115pt:1ex:=4.71457pt
+[10]
+
+:tex2html_wrap_indisplay216:lthtmlCropMarkHeight:=21.62024pt
+
+:tex2html_wrap_indisplay216:lthtmlCropMarkDepth:=7.51115pt:1ex:=4.71457pt
+[11]
+
+:tex2html_wrap_indisplay218:lthtmlCropMarkHeight:=21.62024pt
+
+:tex2html_wrap_indisplay218:lthtmlCropMarkDepth:=7.51115pt:1ex:=4.71457pt
+[12]
+
+:tex2html_wrap_indisplay220:lthtmlCropMarkHeight:=21.62024pt
+
+:tex2html_wrap_indisplay220:lthtmlCropMarkDepth:=7.51115pt:1ex:=4.71457pt
+[13]
+
+:tex2html_wrap_indisplay222:lthtmlCropMarkHeight:=21.62024pt
+
+:tex2html_wrap_indisplay222:lthtmlCropMarkDepth:=7.51115pt:1ex:=4.71457pt
+[14]
+
+:tex2html_wrap_indisplay224:lthtmlCropMarkHeight:=21.62024pt
+
+:tex2html_wrap_indisplay224:lthtmlCropMarkDepth:=7.51115pt:1ex:=4.71457pt
+[15]
+
+:tex2html_wrap_inline226:lthtmlCropMarkHeight:=13.48248pt
+
+:tex2html_wrap_inline226:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+[16]
+
+:tex2html_wrap_indisplay228:lthtmlCropMarkHeight:=13.60416pt
+
+:tex2html_wrap_indisplay228:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+[17]
+
+:tex2html_wrap_indisplay230:lthtmlCropMarkHeight:=13.60416pt
+
+:tex2html_wrap_indisplay230:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+[18]
+
+:tex2html_wrap_indisplay232:lthtmlCropMarkHeight:=13.48248pt
+
+:tex2html_wrap_indisplay232:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+[19]
+
+:tex2html_wrap_indisplay234:lthtmlCropMarkHeight:=20.89023pt
+
+:tex2html_wrap_indisplay234:lthtmlCropMarkDepth:=7.51115pt:1ex:=4.71457pt
+[20]
+
+:tex2html_wrap_indisplay236:lthtmlCropMarkHeight:=20.89023pt
+
+:tex2html_wrap_indisplay236:lthtmlCropMarkDepth:=7.51115pt:1ex:=4.71457pt
+[21]
+
+:tex2html_wrap_indisplay238:lthtmlCropMarkHeight:=21.0119pt
+
+:tex2html_wrap_indisplay238:lthtmlCropMarkDepth:=9.64032pt:1ex:=4.71457pt
+[22]
+
+:tex2html_wrap_indisplay240:lthtmlCropMarkHeight:=20.89023pt
+
+:tex2html_wrap_indisplay240:lthtmlCropMarkDepth:=7.51115pt:1ex:=4.71457pt
+[23]
+
+:tex2html_wrap_inline242:lthtmlCropMarkHeight:=13.48248pt
+
+:tex2html_wrap_inline242:lthtmlCropMarkDepth:=0.42812pt:1ex:=4.71457pt
+[24] (./images.aux) ) 
+Here is how much of TeX's memory you used:
+ 2810 strings out of 494561
+ 33619 string characters out of 6177454
+ 102856 words of memory out of 5000000
+ 6466 multiletter control sequences out of 15000+600000
+ 8288 words of font info for 32 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 27i,5n,35p,225b,129s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on images.pdf (24 pages, 39187 bytes).
+PDF statistics:
+ 97 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,102 @@
+\documentclass[11pt,a4paper]{article} 
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\selectlanguage{spanish}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+\title{COVID 19 - R0}
+\author{A. Vieiro - Licencia CC BY-SA 4.0}
+
+\section{El modelo Kermack-McKendrick}
+
+\subsection{Definiciones}
+
+Dada una población de personas $N$, se definen:
+
+\begin{itemize}
+\item $S(t)$ número de personas subsceptibles de contagio, es decir, sanas.
+\item $I(t)$ número de personas infectadas.
+\item $R(t)$ número de personas recuperadas (o fallecidas).
+\end{itemize}
+
+donde $t$ es el tiempo.
+
+El modelo utiliza las siguientes tres constantes:
+
+\begin{itemize}
+\item $\beta$ que indica la velocidad de infección.
+\item $\gamma$ que indica la velocidad de recuperación.
+\end{itemize}
+
+Y también el factor de infección como:
+
+$$ R_0 \equiv \frac{\beta S}{\gamma} $$
+
+Que nos indica a cuántas personas sanas es capaz de infectar una persona enferma durante su enfermedad.
+
+\subsection{Condiciones adicionales}
+
+En una población con $N$ personas, cada persona está sana, infectada o recuperada, esto es:
+
+$$
+S(t) + I(t) + R(t) = N
+$$
+
+Derivando respecto al tiempo obtenemos:
+
+$$
+\frac{dS(t)}{dt} + \frac{dI(t)}{dt} + \frac{dR(t)}{dt} = 0
+$$
+
+\subsection{Ecuaciones del modelo}
+
+Este modelo relaciona las constantes con las funciones anteriores a través de tres ecuaciones:
+
+$$\frac{dS(t)}{dt} = - \beta(t) S(t) I(t) $$
+$$\frac{dI(t)}{dt} = \beta(t) S(t) I(t) - \gamma(t) I(t)$$
+$$\frac{dR(t)}{dt} = \gamma(t) I(t) $$
+
+Es fácil comprobar que, efectivamente,
+
+$$\frac{dI(t)}{dt} + \frac{dS(t)}{dt} + \frac{dR(t)}{dt} = 0 $$
+
+Aproximando las derivadas por incrementos, es decir:
+
+$$\frac{df(t)}{dt} \approx \frac{\Delta f}{\Delta t}$$
+
+y asumiendo un incremento de tiempo de la unidad (un día, una hora, una semana), es decir, si $\Delta t = 1$, entonces:
+
+$$ \Delta S  \approx - \beta S I $$
+$$ \Delta I \approx \beta S I - \gamma I $$
+$$ \Delta R \approx \gamma I $$
+
+Despejando obtenemos las aproximaciones:
+
+$$ \gamma \approx \frac{\Delta R}{I} $$
+$$ \beta \approx - \frac{\Delta S}{S I} $$
+
+Entonces
+
+$$ R_0 \equiv \frac{\beta S}{\gamma} \approx - \frac{\Delta S}{\Delta R} = \frac{\Delta R + \Delta I}{\Delta R} $$
+
+En resumen, el factor de propagación de la enfermedad se aproxima por:
+
+$$ R_0 \approx \frac{\Delta R + \Delta I}{\Delta R} $$
+
+Este factor será menor que la unidad únicamente cuando $\Delta I < 0$, es
+decir, cuando el número de nuevos contagios descienda, y será mayor que la
+unidad en caso contrario.
+
+\subsection{Más información}
+
+\begin{itemize}
+\item Ver \href{https://mathworld.wolfram.com/Kermack-McKendrickModel.html}{modelo Kermack-McKendrick en mathworld}.
+\item Ver más información sobre la licencia Creative Commons \href{https://creativecommons.org/licenses/by-sa/4.0/}{CC BY-SA 4.0}
+\end{itemize}
+
+\end{document}
