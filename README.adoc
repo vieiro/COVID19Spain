@@ -16,9 +16,16 @@ NOTE: La precisión de los cálculos es la que es, yo no respondo de las conclus
 
 Los datos son los de Datadista, disponibles en https://raw.githubusercontent.com/datadista/datasets/master/COVID%2019/nacional_covid19.csv, que se actualizan diariamente.
 
+En la última actualización de datos de Datadista, se proporcionan dos columnas: `casos_total` y `casos_pcr`. 
+Esto representa el *acumulado* de casos detectados en los hospitales de España, esto es, la gente que
+ha dado positiva.
+
+El número de personas *infectadas* en una fecha determinada se calcula sumando los casos acumulados: `casos_total` y `casos_pcr`, y
+restando el número de personas que ya han superado (columna `altas`) y los fallecidos (columna `fallecimientos`).
+
 == El programa
 
-El programa es link:sir2.py[sir2.py]. Es un programa sencillo que puede hacerse con Excel.
+El programa es link:sir3.py[sir3.py]. Es un programa sencillo que puede hacerse con Excel.
 
 == El modelo SIR
 
