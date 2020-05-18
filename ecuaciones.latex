@@ -19,12 +19,14 @@
 Dada una población de personas $N$, se definen:
 
 \begin{itemize}
-\item $S(t)$ número de personas subsceptibles de contagio, es decir, sanas.
-\item $I(t)$ número de personas infectadas.
-\item $R(t)$ número de personas recuperadas (o fallecidas).
+\item $S(t)$, como el número de personas subsceptibles de contagio, es decir, sanas.
+\item $I(t)$, como el número de personas infectadas.
+\item $R(t)$, como el número de personas recuperadas (o fallecidas).
 \end{itemize}
 
 donde $t$ es el tiempo.
+
+
 
 El modelo utiliza las siguientes tres constantes:
 
@@ -33,7 +35,7 @@ El modelo utiliza las siguientes tres constantes:
 \item $\gamma$ que indica la velocidad de recuperación.
 \end{itemize}
 
-Y también el factor de infección como:
+Además define el factor de infección como:
 
 $$ R_0 \equiv \frac{\beta S}{\gamma} $$
 
@@ -57,40 +59,55 @@ $$
 
 Este modelo relaciona las constantes con las funciones anteriores a través de tres ecuaciones:
 
-$$\frac{dS(t)}{dt} = - \beta(t) S(t) I(t) $$
-$$\frac{dI(t)}{dt} = \beta(t) S(t) I(t) - \gamma(t) I(t)$$
-$$\frac{dR(t)}{dt} = \gamma(t) I(t) $$
+\begin{equation}
+\label{eq:1}
+\frac{dS(t)}{dt} = - \beta(t) S(t) I(t)
+\end{equation}
+
+\begin{equation}
+\label{eq:2}
+\frac{dI(t)}{dt} = \beta(t) S(t) I(t) - \gamma(t) I(t)
+\end{equation}
+
+\begin{equation}
+\label{eq:3}
+\frac{dR(t)}{dt} = \gamma(t) I(t) 
+\end{equation}
 
 Es fácil comprobar que, efectivamente,
 
 $$\frac{dI(t)}{dt} + \frac{dS(t)}{dt} + \frac{dR(t)}{dt} = 0 $$
 
-Aproximando las derivadas por incrementos, es decir:
+\subsection{Calculando el factor de infección}
 
-$$\frac{df(t)}{dt} \approx \frac{\Delta f}{\Delta t}$$
+Substituyendo las equaciones ~\ref{eq:2} y~\ref{eq:3} en la siguiente expresión:
 
-y asumiendo un incremento de tiempo de la unidad (un día, una hora, una semana), es decir, si $\Delta t = 1$, entonces:
+$$\frac{\frac{dI(t)}{dt} + \frac{dR(t)}{ðt}}{\frac{dR(t)}{dt}}$$
 
-$$ \Delta S  \approx - \beta S I $$
-$$ \Delta I \approx \beta S I - \gamma I $$
-$$ \Delta R \approx \gamma I $$
+Obtendremos:
 
-Despejando obtenemos las aproximaciones:
+$$\frac{\frac{dI(t)}{dt} + \frac{dR(t)}{ðt}}{\frac{dR(t)}{dt}} = \frac{\beta(t)S(t)I(t)}{\gamma(t)I(t)} = \frac{\beta(t)S(t)}{\gamma(t)} \equiv R_0 $$
 
-$$ \gamma \approx \frac{\Delta R}{I} $$
-$$ \beta \approx - \frac{\Delta S}{S I} $$
+Es decir, el factor de infección en cada instante es igual a:
 
-Entonces
+\begin{equation}
+    \label{R0}
+    R_0 \equiv \frac{\frac{dI(t)}{dt} + \frac{dR(t)}{ðt}}{\frac{dR(t)}{dt}}
+\end{equation}
 
-$$ R_0 \equiv \frac{\beta S}{\gamma} \approx - \frac{\Delta S}{\Delta R} = \frac{\Delta R + \Delta I}{\Delta R} $$
+Es decir, el factor de infección es igual a la variación de infectados más la variación de recuperados, dividido por la variación de recuperados.
 
-En resumen, el factor de propagación de la enfermedad se aproxima por:
 
-$$ R_0 \approx \frac{\Delta R + \Delta I}{\Delta R} $$
+\subsection{Aproximando el factor de infección}
 
-Este factor será menor que la unidad únicamente cuando $\Delta I < 0$, es
-decir, cuando el número de nuevos contagios descienda, y será mayor que la
-unidad en caso contrario.
+Si aproximamos las derivadas por incrementos, y asumiendo una unidad de tiempo la unidad, obtendríamos:
+
+\begin{equation}
+    \label{R0:approx}
+    R_0 \approx \frac{\Delta I + \Delta R}{\Delta R}
+\end{equation}
+
+Que es precisamente la fórmula que usamos para aproximar $R_0(t)$.
 
 \subsection{Más información}
 
