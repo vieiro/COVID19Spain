@@ -98,20 +98,17 @@ I = I - R
 DI = numpy.gradient(I)
 DR = numpy.gradient(R)
 
-R0 = (DI + DR)/DR
-# Las divisiones por cero indican un R0 grande
-R0[numpy.isnan(R0)] = 1000
-
-#DI = numpy.diff(I)
-#DR = numpy.diff(R)
-#x = x[1:]
-#
-#R0 = []
-#for i in range(0, len(DI)):
-#    if DR[i] == 0:
-#        R0.append(1000)
-#    else:
-#        R0.append((DI[i])/DR[i])
+# Si DR == 0 entonces el valor de R0 es indeterminado (0/0).
+# Podemos usar el último valor de R0, por ejemplo.
+R0 = []
+for i in range(0, len(DI)):
+    if DR[i] == 0:
+        if i == 0:
+            R0.append(1000)
+        else:
+            R0.append(R0[i-1])
+    else:
+        R0.append((DI[i] + DR[i])/DR[i])
 
 ## Preparar el gráfico
 pyplot.style.use('Solarize_Light2')

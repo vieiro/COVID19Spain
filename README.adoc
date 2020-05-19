@@ -34,7 +34,7 @@ está en todos los periódicos.
 
 La página link:https://mathworld.wolfram.com/Kermack-McKendrickModel.html[Modelo Kermack-McKendrick] de MathWorld explica bastante bien el problema.
 
-El valor `R0(t)` puede calcularse según link:ecuaciones.pdf[estas aproximaciones (PDF)].
+El valor `R0(t)` puede calcularse según link:https://raw.githubusercontent.com/vieiro/COVID19Spain/master/ecuaciones.pdf[estas aproximaciones (PDF)].
 
 Se obtiene:
 
@@ -52,11 +52,9 @@ infectadas.
 image::covid-spain-sir-r0.png[title="Evolución aproximada de R0 en España"]
 
 Es decir, a principios de marzo una persona infectaría alrededor de 6-8 personas durante su enfermedad, y a día de hoy,
-22 de abril, una persona infectará sólo a unas 2.68 personas, es decir, casi tres personas.
+19 de mayo, el valor de R0 es de 0.91, es decir, una persona apenas podrá infectar a otra.
 
 ¡Ánimo y salud a todos!
-
-
 
 
 
